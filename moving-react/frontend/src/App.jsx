@@ -6,7 +6,7 @@ function App() {
   const [showReviews, setShowReviews] = useState(3);
 
   useEffect(() => {
-    fetch("http://localhost:3001/reviews")
+    fetch("http://zulak-moving.onrender.com/reviews")
       .then((response) => response.json())
       .then((data) => setReviews(data))
       .catch((error) => console.error("Error fetching reviews:", error));
