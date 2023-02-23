@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Przeprowadzki - ZULAK MAREK PAZDAN</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <header>
+      <div class="gradient">
+        <h1>Przeprowadzki i usługi transportowe<span>.</span></h1>
+      </div>
+    </header>
+
+    <nav>
+      <h3>Przeprowadzki</h3>
+      <ul>
+        <li>domów</li>
+        <li id="divider">|</li>
+        <li>mieszkań</li>
+        <li id="divider">|</li>
+        <li>biur i firm</li>
+      </ul>
+    </nav>
+    <main>
+      <section id="services">
+        <h2>Lokalne</h2>
+        <p>Warszawa i Mazowieckie</p>
+      </section>
+      <section id="pricing">
+        <h2>Krajowe</h2>
+        <p>Polska</p>
+      </section>
+      <section id="about">
+        <h2>Zagraniczne</h2>
+        <p>Unia Europejska</p>
+      </section>
+    </main>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <div id="contact" class="contact">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.5220514078287!2d20.63896192529693!3d52.21573252449187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47194c5f703d5791%3A0x46b7c51f7308686d!2sRadzik%C3%B3w%2011%2C%2005-870%20Radzik%C3%B3w!5e0!3m2!1sen!2spl!4v1673210773267!5m2!1sen!2spl"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="form">
+        <div class="alignment">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3218/3218245.png"
+            width="30px"
+            height="30px"
+          />
+          <h2>ZULAK MAREK PAZDAN</h2>
+        </div>
+
+        <p>Telefon: +48 787 613 201</p>
+        <p>Email: zulakmovers095@gmail.com</p>
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Imię"
+            required
+          /><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          /><br />
+          <input
+            type="phone"
+            id="phone"
+            name="phone"
+            placeholder="Numer telefonu"
+            required
+          /><br />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Treść wiadomości"
+          ></textarea
+          ><br />
+          <button type="submit">Wyślij wiadomość</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright © ZULAK MAREK PAZDAN | Wszelkie prawa zastrzeżone</p>
+    </footer>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          // port: 2525
+          Username: "mattszumilo@gmail.com",
+          Password: "47662E14A824B39D416BC5B9E821853B5BA1",
+          To: "zulakmovers095@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "Przeprowadzki - wiadomość",
+          Body:
+            "Imię: " +
+            document.getElementById("name").value +
+            "<br> Email: " +
+            document.getElementById("email").value +
+            "<br> Telefon: " +
+            document.getElementById("phone").value +
+            "<br> Wiadomość: " +
+            document.getElementById("message").value,
+        }).then(() => alert("Dziękujemy! Wiadomość wysłana."));
+      }
+    </script>
+  </body>
+</html>

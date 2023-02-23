@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 55% !important;
+  height: 500px;
+  display: block;
+  z-index: 1;
+  font-family: "Baloo Bhai 2", Arial, sans-serif;
+  text-align: center;
+}
+
+header h1 {
+  color: rgb(241, 245, 245);
+  font-size: 4rem;
+  position: relative;
+  z-index: 5;
+  padding-top: 180px;
+  width: 750px;
+  margin: 0 auto;
+}
+
+header span {
+  color: rgb(73, 228, 255);
+}
+
+.gradient {
+  background: rgb(141, 205, 240);
+  background: linear-gradient(
+    330deg,
+    rgba(175, 175, 175, 0.25) 0%,
+    rgba(35, 35, 35, 0.1) 100%
+  );
+  height: 500px;
+}
+
+nav {
+  padding: 80px 0 50px;
+  text-align: center;
+}
+
+nav h3 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+nav h3:after {
+  content: "";
+  display: block;
+  width: 50px;
+  margin-top: 5px;
+  background: #b82222;
+  height: 2px;
+  margin: 0 auto;
+}
+
+nav ul {
+  margin: 30px 0 0 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 0 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav #divider {
+  color: rgb(189, 189, 189);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 20px;
+}
+
+section {
+  background-color: #fff;
+  border: 1px solid rgb(245, 245, 245);
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  border-radius: 50px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+section h2 {
+  margin: 0;
+}
+
+section p {
+  margin-top: 20px;
+}
+
+#contact {
+  margin: 50px auto 50px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#contact img {
+  margin-right: 15px;
+}
+
+#contact h2 {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.alignment {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 300px;
+  margin: 0 20px;
+}
+
+.form form {
+  margin: 25px 0;
+}
+
+.form p {
+  margin: 10px 0;
+}
+
+.map {
+  width: 400px;
+  margin: 0 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 0.7em;
+  padding: 10px;
+  width: 280px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(242, 242, 242);
+  margin: 5px 0;
+}
+
+textarea {
+  height: 65px;
+}
+
+button[type="submit"] {
+  background-color: rgb(230, 88, 27);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(120, 47, 16);
+  transition: 0.3s;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+@media (max-width: 1300px) {
+  header {
+    background-position: 50% -570px;
+  }
+
+  header h1 {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 1000px) {
+  header {
+    background-position: 50% -340px;
+  }
+
+  header h1 {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    background-position: 50% -250px;
+  }
+
+  header h1 {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 780px) {
+  .contact {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  header {
+    height: fit-content;
+    background-position: 50% 0 !important;
+    background-size: 100%;
+  }
+  .gradient {
+    height: 300px;
+  }
+  header h1 {
+    font-size: 3rem;
+    width: 550px;
+    padding-top: 80px;
+  }
+  .map,
+  .form {
+    margin: 25px auto;
+  }
+  iframe {
+    width: 400px;
+  }
+  .map {
+    width: 400px;
+  }
+  footer {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 660px) {
+  header {
+    height: 250px;
+  }
+  .gradient {
+    height: 250px;
+  }
+}
+
+@media (max-width: 580px) {
+  header h1 {
+    width: 350px;
+    font-size: 2rem;
+    padding-top: 65px;
+  }
+
+  header {
+    height: 200px;
+  }
+  .gradient {
+    height: 200px;
+  }
+  nav h3 {
+    font-size: 2rem;
+  }
+  iframe {
+    width: 300px;
+  }
+  .map {
+    width: 300px;
+  }
+}
+
+@media (max-width: 490px) {
+}
+
+@media (max-width: 455px) {
+  header {
+    height: 175px;
+  }
+  .gradient {
+    height: 175px;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    height: 150px;
+  }
+  .gradient {
+    height: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  header h1 {
+    width: 250px;
+    font-size: 1.5rem;
+    padding-top: 40px;
+  }
+  iframe {
+    width: 250px;
+  }
+  .map {
+    width: 250px;
+  }
+  .form {
+    width: 250px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="phone"],
+  textarea {
+    width: 250px;
+  }
+}
+
+@media (max-width: 345px) {
+  header {
+    height: 120px;
+  }
+  .gradient {
+    height: 120px;
+  }
+}
+
+@media (max-width: 285px) {
+  header {
+    height: 110px;
+  }
+  .gradient {
+    height: 110px;
+  }
+  header h1 {
+    padding-top: 30px;
+  }
+}

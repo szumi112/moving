@@ -1,0 +1,199 @@
+.reviews-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: sans-serif;
+}
+
+.reviews-heading {
+  font-size: 32px;
+
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.reviews-list {
+  list-style: none;
+  padding: 0;
+}
+
+.review {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.review-name {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #575757;
+}
+
+.review-date {
+  font-size: 18px;
+  color: #4f4f4f;
+}
+
+.review-img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.review-stars {
+  margin: 0 0 20px 0;
+}
+
+.review-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4f4f4f;
+}
+
+.reviews-button {
+  background-color: #008080;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.reviews-button:hover {
+  background-color: #007a7a;
+}
+
+.imgContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto 100px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  max-width: 200px;
+  margin-bottom: 10px;
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.Modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+  width: auto;
+  margin: 0 auto;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: 0 auto;
+}
+
+.modal-button {
+  background-color: transparent;
+  color: white;
+  font-size: 56px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+.modal-button:hover {
+  color: #f1f1f1;
+}
+
+.modal-button:active {
+  transform: translateY(2px);
+}
+
+.modal-button.left {
+  left: 10px;
+}
+
+.modal-button.right {
+  right: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 36px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.close-button:hover {
+  color: #f1f1f1;
+}
+
+.close-button:active {
+  transform: translateY(2px);
+}
+
+.mdlContainer {
+  position: relative;
+}
+
+.mdlContainer .left {
+  position: absolute;
+  left: 10px !important;
+}
+
+@media screen and (max-width: 868px) {
+  .imgContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 100px;
+  }
+  .image {
+    width: 150px !important;
+  }
+
+  .modal-image {
+    max-width: 75%;
+    height: auto;
+    max-height: 80vh;
+    width: auto;
+    margin: 0 auto;
+  }
+}
