@@ -3,7 +3,7 @@ import "./index.css";
 
 function App() {
   const [reviews, setReviews] = useState([]);
-  const [showReviews, setShowReviews] = useState(2);
+  const [showReviews, setShowReviews] = useState(3);
 
   useEffect(() => {
     fetch("http://localhost:3001/reviews")
@@ -31,7 +31,7 @@ function App() {
       </ul>
       <button
         className="reviews-button"
-        onClick={() => setShowReviews(showReviews === 2 ? 7 : 2)}
+        onClick={() => setShowReviews(showReviews === 3 ? 8 : 3)}
       >
         {showReviews === 2 ? "Pokaż więcej" : "Pokaż mniej"}
       </button>
