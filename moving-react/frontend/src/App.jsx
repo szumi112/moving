@@ -13,7 +13,7 @@ function App() {
   }, []);
 
   return (
-    <div className="reviews-container">
+    <div className="reviews-container" data-testid={"reviews-container"}>
       <h1 className="reviews-heading">Opinie</h1>
       <ul className="reviews-list">
         {reviews.slice(0, showReviews).map((review) => (
@@ -32,6 +32,7 @@ function App() {
       <button
         className="reviews-button"
         onClick={() => setShowReviews(showReviews === 2 ? 7 : 2)}
+        data-testid={"reviews-button"}
       >
         {showReviews === 2 ? "Pokaż więcej" : "Pokaż mniej"}
       </button>
